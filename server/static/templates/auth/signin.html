@@ -1,0 +1,32 @@
+{% extends 'header.html' %}
+
+{% load staticfiles %}
+
+{% block head %}
+  <title>Workshop - Login</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="box" style="margin-top: 10%;">
+	<center>
+		<h1 style="margin-top: 2%;">Login</h1>
+	</center>
+	<form style="width: 60%; margin-left: auto; margin-right: auto; margin-top: 3%;" id="form">
+		<div class="form-group">
+		  <label for="username">Username</label>
+		  <input type="text" class="form-control" id="username" placeholder="Enter username">
+		</div>
+		<div class="form-group">
+		  <label for="password">Password</label>
+		  <input type="password" class="form-control" id="password" placeholder="Password">
+		</div>
+		<small id="notRegistered">Are you new here ? <a href="/auth/signup">Click here to register for free !</a></small><br>
+		<button class="btn btn-primary" type="submit" onclick="signin()">Sign in</button>
+	</form>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'js/auth/signin.js' %}"></script>
+{% endblock %}
