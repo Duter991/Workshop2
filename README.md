@@ -4,7 +4,7 @@ Django REST Api (DOC: https://www.django-rest-framework.org/)
 
 # Setup
 
-Lancés les commandes:
+Lancer les commandes:
 
 ```bash
 dnf -y install python3 python3-pip python3-devel
