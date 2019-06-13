@@ -1,6 +1,6 @@
 # Workshop2
 
-Django REST Api
+Django REST Api (DOC: https://www.django-rest-framework.org/)
 
 # Setup
 
