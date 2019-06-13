@@ -35,7 +35,7 @@ Ce liens permettras de récupérer un json contenant une liste de tout les usern
 
 ## EX 2
 
-Une requéte sur l'url http://localhost:8000/api/users/?username=MonUsername donneras un json avec les champs:
+Une requéte sur l'url http://localhost:8000/api/users/search/?username=MonUsername donneras un json avec les champs:
   - ``name``: le prénom de l'utilisateur
   - ``last_name``: le nom de famille de l'utilisateur
   - ``email``: l'email de l'utilisateur
@@ -45,8 +45,8 @@ Une requéte sur l'url http://localhost:8000/api/users/?username=MonUsername don
 La même requete que l'exercice précédant feras une erreur "403 Permission Denied", il faudras rajouté l'argument ``token``:
 
 ```
-http://localhost:8000/api/users/?username=MonUsername -> ERROR
-http://localhost:8000/api/users/?username=MonUsername&token=MonToken -> SUCCESS (si le token est associé à l'user MonUsername dans la base de donnée)
+http://localhost:8000/api/users/search/?username=MonUsername -> ERROR
+http://localhost:8000/api/users/search/?username=MonUsername&token=MonToken -> SUCCESS (si le token est associé à l'user MonUsername dans la base de donnée)
 ```
 
 # Rappels
