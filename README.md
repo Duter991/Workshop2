@@ -11,6 +11,7 @@ dnf -y install python3 python3-pip python3-devel
 git clone https://github.com/Duter991/Workshop2.git
 cd Workshop2
 [sudo] pip3 install -r requirement.txt
+cd server
 python3 manage.py migrate
 python3 manage.py makemigrations
 ```
